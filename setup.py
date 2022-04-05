@@ -44,27 +44,28 @@ with open('./README.md') as readme:
 
 
 setup(
-    name='<PYPI_NAME>',
+    name='JamNet',
     # *IMPORTANT*: Don't manually change the version here. Use `make bump`, as described in readme
     version='0.1.0-alpha.0',
-    description="""<PYPI_NAME>: <SHORT_DESCRIPTION>""",
+    description="""JamNet: Jam Eth test net""",
     long_description=long_description,
     long_description_content_type='text/markdown',
-    author='The Ethereum Foundation',
-    author_email='snakecharmers@ethereum.org',
-    url='https://github.com/ethereum/<REPO_NAME>',
+    author='Mahesh Subramanian',
+    author_email='maheshpec123@gmail.com',
+    url='https://github.com/maheshpec/jamnet',
     include_package_data=True,
     install_requires=[
-        "eth-utils>=2,<3",
+      "eth-utils>=1,<2",
+      "py-evm==0.5.0a0",
     ],
     python_requires='>=3.6, <4',
     extras_require=extras_require,
-    py_modules=['<MODULE_NAME>'],
+    py_modules=['JAMNetwork'],
     license="MIT",
     zip_safe=False,
     keywords='ethereum',
     packages=find_packages(exclude=["tests", "tests.*"]),
-    package_data={'<MODULE_NAME>': ['py.typed']},
+    package_data={'JAMNetwork': ['py.typed']},
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
